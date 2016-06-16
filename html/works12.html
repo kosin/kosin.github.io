@@ -28,11 +28,11 @@
 				
 				<li class="on" >
 					<div class="item-icon">
-						<img src="../img/works/item-icon0.png" alt="个人练习">
+						<img  src="../img/works/item-icon0.png"  alt="个人练习">
 					</div>
-					<h2>《个人练习》 2013-2015</h2>
+					<h2>《个人作品》 2013-2015</h2>
 					<i class="line"></i>
-					<p>个人练习图标、UI界面、手绘</p>
+					<p>个人绘制图标、UI界面、手绘</p>
 					<p></p>
 					<!--<p>游戏网址：<a href="www.gandaxiyou.com" target="_blank">www.gandaxiyou.com</a></p>-->
 				</li>
@@ -43,23 +43,22 @@
 
 		<ul class="on" >
 			<li>
-				<img src="../img/works/training1.jpg"  alt="个人练习">
+				<img class="lazy"  src="../img/works/training1.jpg"  data-original="../img/works/training1.jpg"  alt="图标绘制">
 			</li>
-			<li><img src="../img/works/training2.jpg"  alt="个人练习"></li>
-			<li><img src="../img/works/training3.jpg"  alt="个人练习"></li>
-			<li><img src="../img/works/training4.jpg"  alt="个人练习"></li>
-			<li><img src="../img/works/training5.jpg"  alt="个人练习"></li>
-			<li><img src="../img/works/training6.jpg"  alt="个人练习"></li>
+			<li><img class="lazy"  src="../img/works/training2.jpg"  data-original="../img/works/training2.jpg"  alt="外包"></li>
+			<li><img class="lazy"  src="../img/works/training3.jpg"  data-original="../img/works/training3.jpg"  alt="个人练习"></li>
+			<li><img class="lazy"  src="../img/works/training4.jpg"  data-original="../img/works/training4.jpg"  alt="速写练习"></li>
+			
 		</ul>
 	</div>
 	<div class="footer">
 		<div class="center">
-			<img class="logo" src="../img/logo-white.png" alt="LGC">
+			<a href="javascript:;" target="_self"></a>
 		</div>
 		<p>Copyright © 2016  kosin Lu.  All rights reserved</p>
 	</div>
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/jquery.lazyload.min.js"></script>
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/jquery.lazyload.min.js"></script>
 	<script>
 	$(function(){
 		// 图片延迟加载
@@ -67,7 +66,9 @@
 			paceholder : "img/grey.gif",
 			effect: "fadeIn"
 		});
-
+    });
+    $('.footer .center a').click(function(){
+    $('html,body').animate({scrollTop: '0px'}, 1200);}); 
 	</script>
 </body>
 </html>

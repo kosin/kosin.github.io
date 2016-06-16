@@ -44,7 +44,7 @@
 		
 		<ul class="on sub">
 			<li>
-				<img src="../img/works/luoli.jpg" alt="萝莉精灵网页">
+				<img class="lazy"  src="../img/works/luoli.jpg"  data-original="../img/works/luoli.jpg" alt="萝莉精灵网页">
 			</li>
 			
 		</ul>
@@ -52,12 +52,12 @@
 	</div>
 	<div class="footer">
 		<div class="center">
-			<img class="logo" src="../img/logo-white.png" alt="LGC">
+			<a href="javascript:;" target="_self"></a>
 		</div>
 		<p>Copyright © 2016  kosin Lu.  All rights reserved</p>
 	</div>
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/jquery.lazyload.min.js"></script>
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/jquery.lazyload.min.js"></script>
 	<script>
 	$(function(){
 		// 图片延迟加载
@@ -65,7 +65,9 @@
 			paceholder : "img/grey.gif",
 			effect: "fadeIn"
 		});
-
+    });
+    $('.footer .center a').click(function(){
+    $('html,body').animate({scrollTop: '0px'}, 1200);}); 
 	</script>
 </body>
 </html>

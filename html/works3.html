@@ -28,7 +28,7 @@
 				
 				<li class="on" >
 					<div class="item-icon">
-						<img src="../img/works/item-icon3.png" alt="雪景">
+						<img src="../img/works/item-icon3.png"  alt="雪景">
 					</div>
 					<h2>《雪景记》 2016.5.29</h2>
 					<i class="line"></i>
@@ -44,20 +44,20 @@
 		
 		<ul class="on sub">
 			<li>
-				<img src="../img/works/snow1.gif" width="" height="" alt="雪景">
+				<img class="lazy"  src="../img/works/snow.jpg" data-original="../img/works/snow.jpg" width="" height="" alt="雪景">
 			</li>
-
+            <li><img class="lazy"  src="../img/works/snow.gif" data-original="../img/works/snow.gif" width="" height="" alt="雪景">			</li>
 		</ul>
 		
 	</div>
 	<div class="footer">
 		<div class="center">
-			<img class="logo" src="../img/logo-white.png" alt="LGC">
+			<a href="javascript:;" target="_self"></a>
 		</div>
 		<p>Copyright © 2016  kosin Lu.  All rights reserved</p>
 	</div>
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/jquery.lazyload.min.js"></script>
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/jquery.lazyload.min.js"></script>
 	<script>
 	$(function(){
 		// 图片延迟加载
@@ -65,7 +65,9 @@
 			paceholder : "img/grey.gif",
 			effect: "fadeIn"
 		});
-
+    });
+    $('.footer .center a').click(function(){
+    $('html,body').animate({scrollTop: '0px'}, 1200);}); 
 	</script>
 </body>
 </html>

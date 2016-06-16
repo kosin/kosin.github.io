@@ -78,7 +78,6 @@
 			$('.nav-aside').css({"width":"80%","height":"80%"})
 		  };*/
 
-
           var workH=$("#works").offset().top-44;
           var aboutH=$("#about").offset().top-44;
           var contactH=$("#contact").offset().top-44;
@@ -99,52 +98,7 @@
     });
 
 
-//$(function(){
-//	var lb = $("#works"),
-	 /*lnum=$(".inimg li").length;
-	 wnum=lnum/12;*/
-//		lb_cur = 1,
-//		lbp_w = lb.find(".inimg").width();
-//		lb_timer = null;
-//	    t = 1;
-//	function showLimitBuyProducts(){
-//		if(lb_cur < 1){
-//			lb_cur = 6;
-//		} else if(lb_cur > 6){
-//			lb_cur = 1;
-//		}
-		/*var lp=(lb_cur-1)*12;
-		for(i=lp+1;i<=lb_cur*12;i++){
-		  /* var inimg = $("#works .inimg").css("display","none").animate(1500).eq(lb_cur-1).animate(1500).css("display","block"),*/
-//			$(".inimg li").hide();
-//			var b=lb_cur-1;
-//			$(".nohidden"+b).fadeTo(2000,1).show();
-		/*}*/
-//	}
-//	lb_timer = setInterval(function(){
-//		lb_cur++;
-//		showLimitBuyProducts();
-//	}, 4000);
-
-//	$(".changeimg .prev").click(function(){
-//		lb_cur--;
-//		showLimitBuyProducts();
-//	});
-//	$(".changeimg .next").click(function(){
-//		lb_cur++;
-//		showLimitBuyProducts();
-//	});
-//	$(".changeimg").hover(function(){
-//			clearInterval(lb_timer);
-//			lb_timer = null;
-//			/*$(".changeimg .prev, .changeimg .next").show();*/
-//		}, function(){
-//			lb_timer = setInterval(function(){
-//				lb_cur++;
-//				showLimitBuyProducts();
-//			}, 4000);
-			/*$(".changeimg .prev, .changeimg .next").hide();*/
-//	});
-//});
+	
+	
 
 })(jQuery);

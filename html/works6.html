@@ -28,7 +28,7 @@
 				
 				<li class="on" >
 					<div class="item-icon">
-						<img src="../img/works/item-icon6.png" alt="敢达西游图标">
+						<img src="../img/works/item-icon6.png"  alt="敢达西游图标">
 					</div>
 					<h2>《敢达西游》 2014.6</h2>
 					<i class="line"></i>
@@ -44,35 +44,35 @@
 		
 		<ul class="on sub">
 			<li>
-				<img src="../img/works/wwjourney1.jpg" width="" height="" alt="敢达西游">
+				<img class="lazy"  src="../img/works/wwjourney1.jpg"  data-original="../img/works/wwjourney1.jpg" width="" height="" alt="敢达西游">
 			</li>
-			<li><img src="../img/works/wwjourney2.jpg" width="" height="" alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney3.jpg" width="" height=""  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney4.jpg" width="" height=""  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney5.jpg" width="" height=""  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney6.jpg"  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney7.jpg"  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney8.jpg"  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney9.jpg"  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney10.jpg" alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney11.jpg" alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney12.jpg" alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney13.jpg" alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney14.jpg"  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney15.jpg"  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney16.jpg"  alt="敢达西游"></li>
-			<li><img src="../img/works/wwjourney17.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney2.jpg"  data-original="../img/works/wwjourney2.jpg" width="" height="" alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney3.jpg"  data-original="../img/works/wwjourney3.jpg" width="" height=""  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney4.jpg"  data-original="../img/works/wwjourney4.jpg" width="" height=""  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney5.jpg"  data-original="../img/works/wwjourney5.jpg" width="" height=""  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney6.jpg"  data-original="../img/works/wwjourney6.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney7.jpg"  data-original="../img/works/wwjourney7.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney8.jpg"  data-original="../img/works/wwjourney8.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney9.jpg"  data-original="../img/works/wwjourney9.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney10.jpg"  data-original="../img/works/wwjourney10.png" alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney11.jpg"  data-original="../img/works/wwjourney11.png" alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney12.jpg"  data-original="../img/works/wwjourney12.png" alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney13.jpg"  data-original="../img/works/wwjourney13.png" alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney14.jpg"  data-original="../img/works/wwjourney14.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney15.jpg"  data-original="../img/works/wwjourney15.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney16.jpg"  data-original="../img/works/wwjourney16.jpg"  alt="敢达西游"></li>
+			<li><img class="lazy"  src="../img/works/wwjourney17.jpg"  data-original="../img/works/wwjourney17.png" alt="敢达西游"></li>
 		</ul>
 		
 	</div>
 	<div class="footer">
 		<div class="center">
-			<img class="logo" src="../img/logo-white.png" alt="LGC">
+			<a href="javascript:;" target="_self"></a>
 		</div>
 		<p>Copyright © 2016  kosin Lu.  All rights reserved</p>
 	</div>
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/jquery.lazyload.min.js"></script>
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/jquery.lazyload.min.js"></script>
 	<script>
 	$(function(){
 		// 图片延迟加载
@@ -80,7 +80,9 @@
 			paceholder : "img/grey.gif",
 			effect: "fadeIn"
 		});
-
+    });
+    $('.footer .center a').click(function(){
+    $('html,body').animate({scrollTop: '0px'}, 1200);}); 
 	</script>
 </body>
 </html>
